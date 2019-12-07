@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title{
+    color: #EFE7DA;
+    margin: 1em;
+    font-size: 64pt;
+}
+
+.userButton{
+    display: block;
+    width: 12em;
+}
+
+#changeuserbutton{
+    display: block;
+    width: 12em;
+    height: 2em;
+}
+
+#bodyContainer{
+    margin: 1em;
+}
+
+.headerbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 150px;
+    background-color:#0E4749;
+    padding-right: 1em;
+}
+
+.groups{
+    border: 1px solid black;
+    min-height: 2em;
+    border-radius: 0.5em;
+    padding: 1em;
+}
+
+.groupEntry{
+    display: flex;
+    flex-direction: row;
+}
+
+.formRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1em;
+}
