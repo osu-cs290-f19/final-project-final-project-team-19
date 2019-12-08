@@ -1,14 +1,14 @@
 <script src="index.js" charset="utf-8"></script>
 <div id='bodyContainer'>
     <div style='display: flex; flex-direction: row; justify-content: space-between;'>
-        <h1>My Groups</h1>
+        <h1>Find a Group</h1>
         <div style='display: flex; flex-direction: column; justify-content: space-evenly;'>
-            <input class='userButton' type="button" value='Find a group'/>
             <input class='userButton' type="button" value='Create a group'/>
         </div>
     </div>
-    
     <div class='groups'>
-        
+        {{#each groupsData}}
+        {{> groupEntry }}
+        {{/each}}
     </div>
 </div>

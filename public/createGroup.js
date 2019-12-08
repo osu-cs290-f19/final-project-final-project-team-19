@@ -27,6 +27,7 @@ function sendGroupInfo(){
           var responseBody = event.target.response;
           alert("Error saving photo on server side: " + responseBody);
         } else {
+            document.location.href = "/findGroups";
         //   var photoCardTemplate = Handlebars.templates.photoCard;
         //   var newPhotoCardHTML = photoCardTemplate({
         //     url: photoURL,

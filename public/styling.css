@@ -3,6 +3,10 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h1{
+    color: #002626;
+}
+
 .title{
     color: #EFE7DA;
     margin: 1em;
@@ -43,7 +47,40 @@ body{
 
 .groupEntry{
     display: flex;
+    flex-direction: column;
+}
+
+.entryBody{
+    border-radius: 4px;
+    padding-left: 2em;
+    max-height: 0px;
+    transition: max-height 0.5s;
+    overflow-y: hidden;
+    margin-bottom: 1em;
+}
+
+.showEntryBody{
+    max-height: 250px;
+    padding-bottom: 1em;
+    border: 1px solid #EFE7DA;
+}
+
+.arrowIcon{
+    transition: transform 0.5s;
+}
+
+.rotate90{
+    transform: rotateZ(90deg);
+}
+
+.groupEntry :hover{
+    cursor: pointer;
+}
+
+.groupEntry-header{
+    display: flex;
     flex-direction: row;
+    color: #E55812;
 }
 
 .formRow{

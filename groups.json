@@ -1,2 +1,26 @@
-{
-}
+[
+ {
+  "name": "CS 290",
+  "groupID": "",
+  "description": "This is a study group for ",
+  "members": []
+ },
+ {
+  "name": "New",
+  "groupID": "",
+  "description": "abc",
+  "members": []
+ },
+ {
+  "name": "test",
+  "description": "123",
+  "uuid": "eab21220-1953-11ea-b6a2-3777f318f06f",
+  "members": []
+ },
+ {
+  "name": "Wow",
+  "description": "This is a World of warcraft group",
+  "uuid": "f3e62e30-1953-11ea-b6a2-3777f318f06f",
+  "members": []
+ }
+]

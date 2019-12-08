@@ -1,21 +1,33 @@
 var path = require('path');
 var express = require('express');
-var app = express();
-var port = process.env.PORT || 3000;
+var fs = require('fs');
 var exphbs = require('express-handlebars');
 var bodyParser = require('body-parser');
+var cookieParser = require('cookie-parser');
+const uuidv1 = require('uuid/v1');
+var app = express();
+
+var port = process.env.PORT || 3000;
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
+app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(express.static('public'));
+var groups = require('./groups.json');
 
 app.get('/', function (req, res) {
     res.render('greetUser', {title: 'Sign in'});
+    res.cookie('name', 'express').send('cookie set');
 });
 
 app.get('/myGroups', function (req, res) {
     res.render('myGroups', {title: 'My Groups'});
+});
+
+app.get('/findGroups', function (req, res, next) {
+    groups = require('./groups.json');
+    res.render('findGroups', {title: 'Find Group', groupsData: groups});
 });
 
 app.get('/createGroup', function (req, res) {
@@ -23,9 +35,22 @@ app.get('/createGroup', function (req, res) {
 });
 
 app.post('/createGroup/addGroup', function (req, res, next) {
-    var person = req.body;
-    console.log(person);
-    res.status(200).send();
+    var newGroup = req.body;
+    newGroup.uuid = uuidv1();
+    newGroup.members = [];
+    groups = require('./groups.json');
+    groups.push(newGroup);
+    fs.writeFile(
+        __dirname + '/groups.json',
+        JSON.stringify(groups, 2, 1),
+        function (err) {
+          if (!err) {
+            res.status(200).send();
+          } else {
+            res.status(500).send("Failed to write data on server side.");
+          }
+        }
+      );
   });
   
 app.post('/createGroup/addGroup', function (req, res, next) {
