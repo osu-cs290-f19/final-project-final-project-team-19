@@ -34,7 +34,22 @@ function sendName(){
     postRequest.send(requestBody);
 };
 
+function joinGroup(groupUuid){
+    var postRequest = new XMLHttpRequest();
+    var requestURL = '/createGroup/join';
+    postRequest.open('POST', requestURL);
+
+    var requestBody = JSON.stringify({
+        groupId: groupUuid,
+    });
+
+    postRequest.setRequestHeader('Content-Type', 'application/json');
+
+    postRequest.send(requestBody);
+};
+
 function toggleEntry(element){
+    console.log(element);
     var body = element.querySelector(".entryBody");
     element.querySelector(".arrowIcon").classList.toggle('rotate90');
     body.classList.toggle('showEntryBody');    
