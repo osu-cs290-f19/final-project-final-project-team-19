@@ -4,7 +4,6 @@ window.addEventListener('DOMContentLoaded', function (){
 
 
 function sendName(){
-    console.log('click');
     var nameField = document.getElementById('namefield');
     var postRequest = new XMLHttpRequest();
     var requestURL = '/';

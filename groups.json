@@ -1,20 +1,8 @@
 [
  {
-  "name": "test",
-  "description": "123",
-  "uuid": "eab21220-1953-11ea-b6a2-3777f318f06f",
-  "members": []
- },
- {
-  "name": "Wow",
-  "description": "This is a World of warcraft group",
-  "uuid": "f3e62e30-1953-11ea-b6a2-3777f318f06f",
-  "members": []
- },
- {
-  "name": "CS 290",
-  "description": "This is a webdev class",
-  "uuid": "ebb722d0-1a13-11ea-adc2-7d11a34aaf18",
+  "name": "Minecraft",
+  "description": "Welcome to our Minecraft group. \n        The purpose of this group it to help players better collaborate on large projects and work together to increase resource production for all. \n        Our discord server is “some discord server” join that if you want to communicate with other members while in game. \n        We would be glad to on our server.",
+  "uuid": "a6364db0-1a1a-11ea-a298-f9c11ce57369",
   "members": []
  }
 ]

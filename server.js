@@ -23,10 +23,14 @@ app.get('/', function (req, res) {
 app.post('/', function (req, res) {
     res.clearCookie('name');
     res.cookie('name', req.body.name);
+    res.send();
 });
 
 app.get('/myGroups', function (req, res) {
-    console.log(req.cookies);
+    name = req.cookies.name;
+    groups = require('./groups.json');
+    //Using the cookies.name create a new array of groups where the user is a member of and send that
+    //as the post data in the render function below v
     res.render('myGroups', {title: 'My Groups'});
 });
 
