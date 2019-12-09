@@ -85,7 +85,7 @@ app.post('/createGroup/addGroup', function (req, res, next) {
         }
       );
   });
-  
+
 app.post('/createGroup/addGroup', function (req, res, next) {
     console.log(req.body);
 });
