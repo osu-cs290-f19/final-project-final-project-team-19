@@ -16,12 +16,19 @@ h1{
 .userButton{
     display: block;
     width: 12em;
+    color: white;
+    background-color: #606060;
+    border-radius: 2em;
 }
 
-#changeuserbutton{
+#change-user-button {
     display: block;
     width: 12em;
     height: 2em;
+
+    color: white;
+    background-color: #606060;
+    border-radius: 2em;
 }
 
 #bodyContainer{
