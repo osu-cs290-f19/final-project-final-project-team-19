@@ -23,7 +23,7 @@ groups.forEach(group => {
 
 function refreshGroupMap(){
     var groupsMap = {};
-    var groups = require('./groups.json');
+    var groups = fs.readFileSync(require.resolve('./groups.json'));
     groups.forEach(group => {
         groupsMap[group.uuid] = group;
     });
@@ -41,15 +41,14 @@ app.post('/', function (req, res) {
 
 app.get('/myGroups', function (req, res) {
     name = req.cookies.name;
-    groups = require('./groups.json');
+    refreshGroupMap();
     postData = [];
-    groups.forEach(element => {
-        if(element.members.includes(name)){
-            postData.push(element);
+    groups = Object.keys(groupsMap);
+    groups.forEach(key => {
+        if(groupsMap[key].members.includes(name)){
+            postData.push(groupsMap[key]);
         }
     });
-    //Using the cookies.name create a new array of groups where the user is a member of and send that
-    //as the post data in the render function below v
     res.render('myGroups', {title: 'My Groups', groupsData: postData});
 });
 
