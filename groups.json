@@ -28,41 +28,5 @@
    "description": "If your looking to join a team or just talk about the sport, this group is for you. We welcome soccer enthusiasts and newcomers alike to come join us and talk about the sport. There are for-fun games every week, just visit the Dixon Center or join the group for more info. We welcome people of all skill levels to join us for some fun. Our games are held at the fields across from the Dixon Center, so come on out and have a good time!",
    "uuid": "4d93e2e0-1a1e-11ea-8471-99ba46308822",
    "members": []
-  },
- {
-  "name": "Minecraft",
-  "description": "Welcome to our Minecraft group. \n        The purpose of this group it to help players better collaborate on large projects and work together to increase resource production for all. \n        Our discord server is “some discord server” join that if you want to communicate with other members while in game. \n        We would be glad to on our server.",
-  "uuid": "a6364db0-1a1a-11ea-a298-f9c11ce57369",
-  "members": ["Lucas"]
- },
- {
-  "name": "CS162",
-  "description": "Computer science 162 is one of the introductory courses to computer science.\n                                 The main focus of this course is on object oriented programming. \n                                        The purpose of this group is to help students more easily form study groups. \n                                        This group is also here to better facilitate communication between student, TAs and professors.",
-  "uuid": "c4721a00-1a1c-11ea-8471-99ba46308822",
-  "members": ["me","That other person"]
- },
- {
-  "name": "Math111",
-  "description": "From the OSU Course Catelog:\n                                        Polynomial equations and inequalities, polynomial functions and graphs, inverse functions, exponential and logarithmic functions, elementary mathematical modeling and applications. Lec/rec. All courses used to satisfy MTH prerequisites must be completed with a C- or better. This group is meant to be a place for students currently in math 111 to find study groups and get help This group is meant to be a place for students currently in math 111 to find study groups and get help on homework.",
-  "uuid": "1ffbc970-1a1d-11ea-8471-99ba46308822",
-  "members": []
- },
- {
-  "name": "hockey",
-  "description": "Welcome to our group for all things hockey. If you are looking for a hockey team to join you have come to the right spot. We meet Tuesdays and Thursdays from 4 to 6 at that one ice ring over by that one street. We would be glad to have you join so please come on down.",
-  "uuid": "111a2a90-1a1e-11ea-8471-99ba46308822",
-  "members": []
- },
- {
-  "name": "soccer",
-  "description": "If your looking to join a team or just talk about the sport, this group is for you. We welcome soccer enthusiasts and newcomers alike to come join us and talk about the sport. There are for-fun games every week, just visit the Dixon Center or join the group for more info. We welcome people of all skill levels to join us for some fun. Our games are held at the fields across from the Dixon Center, so come on out and have a good time!",
-  "uuid": "4d93e2e0-1a1e-11ea-8471-99ba46308822",
-  "members": []
- },
- {
-  "name": "Minecraft",
-  "description": "Welcome to our Minecraft group. The purpose of this group it to help players better collaborate on large projects and work together to increase resource production for all. Our discord server is “some discord server” join that if you want to communicate with other members while in game. We would be glad to on our server.",
-  "uuid": "7e1b4980-1a1e-11ea-8471-99ba46308822",
-  "members": []
- }
+  }
 ]
