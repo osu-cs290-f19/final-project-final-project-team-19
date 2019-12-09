@@ -9,7 +9,7 @@
   "name": "CS162",
   "description": "Computer science 162 is one of the introductory courses to computer science.\n                                 The main focus of this course is on object oriented programming. \n                                        The purpose of this group is to help students more easily form study groups. \n                                        This group is also here to better facilitate communication between student, TAs and professors.",
   "uuid": "c4721a00-1a1c-11ea-8471-99ba46308822",
-  "members": []
+  "members": ["me","That other person"]
  },
  {
   "name": "Math111",
