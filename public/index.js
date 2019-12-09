@@ -44,7 +44,15 @@ function joinGroup(groupUuid){
     });
 
     postRequest.setRequestHeader('Content-Type', 'application/json');
-
+    postRequest.addEventListener('load', function (event) {
+        if (event.target.status !== 200) {
+          var responseBody = event.target.response;
+          alert("Error saving photo on server side: " + responseBody);
+        } else {
+            var responseBody = event.target.response;
+            alert(responseBody);
+        }
+    });
     postRequest.send(requestBody);
 };
 

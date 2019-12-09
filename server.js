@@ -44,10 +44,10 @@ app.post('/findGroups/join', function (req, res){
     groupsMap[req.body.groupId].members.push(user);
     fs.writeFile(
         __dirname + '/groups.json',
-        JSON.stringify(groups, 2, null),
+        JSON.stringify(groups, 2, 1),
         function (err) {
           if (!err) {
-            res.status(200).send();
+            res.status(200).send("You joined " + groupsMap[req.body.groupId].name);
           } else {
             res.status(500).send("Failed to write data on server side.");
           }
