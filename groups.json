@@ -1,17 +1,5 @@
 [
  {
-  "name": "CS 290",
-  "groupID": "",
-  "description": "This is a study group for ",
-  "members": []
- },
- {
-  "name": "New",
-  "groupID": "",
-  "description": "abc",
-  "members": []
- },
- {
   "name": "test",
   "description": "123",
   "uuid": "eab21220-1953-11ea-b6a2-3777f318f06f",
@@ -21,6 +9,12 @@
   "name": "Wow",
   "description": "This is a World of warcraft group",
   "uuid": "f3e62e30-1953-11ea-b6a2-3777f318f06f",
+  "members": []
+ },
+ {
+  "name": "CS 290",
+  "description": "This is a webdev class",
+  "uuid": "ebb722d0-1a13-11ea-adc2-7d11a34aaf18",
   "members": []
  }
 ]
