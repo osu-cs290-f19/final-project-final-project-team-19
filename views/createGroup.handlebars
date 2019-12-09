@@ -9,10 +9,18 @@
         <div class="formRow">
             <h2>Group Tag</h2>
             <div id="tagRadioContainer">
-                <input type="radio" name="Tag" value="Studies" />Studies<br />
-                <input type="radio" name="Tag" value="Games" />Games<br />
-                <input type="radio" name="Tag" value="Sports" />Sports<br />
-                <input type="radio" name="Tag" value="Other" />Other: <input type="text" style="width: auto;" />
+                <div class="tagRadio">
+                    <input type="radio" id="tagStudies" name="Tag" value="Studies" /><label for="tagStudies">Studies</label>
+                </div>
+                <div class="tagRadio">
+                    <input type="radio" id="tagGames" name="Tag" value="Games" /><label for="tagGames">Games</label>
+                </div>
+                <div class="tagRadio">
+                    <input type="radio" id="tagSports" name="Tag" value="Sports" /><label for="tagSports">Sports</label>
+                </div>
+                <div class="tagRadio">
+                    <input type="radio" id="tagOther" name="Tag" value="Other" /><label for="tagOther">Other:  </label> <input id="otherTagText" type="text" style="width: 100%;" />
+                </div>
             </div>
         </div>
 

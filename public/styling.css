@@ -102,8 +102,15 @@ h1{
 }
 
 #tagRadioContainer {
+    display: flex;
+
+    flex-direction: column;
     margin-left: 2.5em;
     width: 100%;
+}
+
+.tagRadio{
+    display: flex;
 }
 
 #tagRadioContainer input{
