@@ -113,6 +113,11 @@ h1{
     display: flex;
 }
 
-#tagRadioContainer input{
-    
+.CrGroupTextBox{
+    border-width: 1.5px;
+    border-color: #404040;
+    border-radius: 15px;
+}
+
+#tagRadioContainer input {
 }
