@@ -101,6 +101,11 @@ h1{
     min-width: 150px;
 }
 
-#tagRadioContainer{
+#tagRadioContainer {
     margin-left: 2.5em;
+    width: 100%;
+}
+
+#tagRadioContainer input{
+    
 }
