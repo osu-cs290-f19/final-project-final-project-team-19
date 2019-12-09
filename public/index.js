@@ -1,7 +1,39 @@
 window.addEventListener('DOMContentLoaded', function (){
-    
+
 });
 
+
+function sendName(){
+    console.log('click');
+    var nameField = document.getElementById('namefield');
+    var postRequest = new XMLHttpRequest();
+    var requestURL = '/';
+    postRequest.open('POST', requestURL);
+
+    var requestBody = JSON.stringify({
+        name: nameField.value,
+    });
+
+    postRequest.setRequestHeader('Content-Type', 'application/json');
+
+    postRequest.addEventListener('load', function (event) {
+        if (event.target.status !== 200) {
+          var responseBody = event.target.response;
+          alert("Error saving photo on server side: " + responseBody);
+        } else {
+            document.location.href = "/myGroups";
+        //   var photoCardTemplate = Handlebars.templates.photoCard;
+        //   var newPhotoCardHTML = photoCardTemplate({
+        //     url: photoURL,
+        //     caption: caption
+        //   });
+        //   var photoCardContainer = document.querySelector('.photo-card-container');
+        //   photoCardContainer.insertAdjacentHTML('beforeend', newPhotoCardHTML);
+        }
+    });
+
+    postRequest.send(requestBody);
+};
 
 function toggleEntry(element){
     console.log(element);

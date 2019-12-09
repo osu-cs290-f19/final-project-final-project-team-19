@@ -18,10 +18,15 @@ var groups = require('./groups.json');
 
 app.get('/', function (req, res) {
     res.render('greetUser', {title: 'Sign in'});
-    res.cookie('name', 'express').send('cookie set');
+});
+
+app.post('/', function (req, res) {
+    res.clearCookie('name');
+    res.cookie('name', req.body.name);
 });
 
 app.get('/myGroups', function (req, res) {
+    console.log(req.cookies);
     res.render('myGroups', {title: 'My Groups'});
 });
 
