@@ -16,6 +16,19 @@ app.use(bodyParser.json());
 app.use(express.static('public'));
 var groups = require('./groups.json');
 
+var groupsMap = {};
+groups.forEach(group => {
+    groupsMap[group.uuid] = group;
+});
+
+function refreshGroupMap(){
+    var groupsMap = {};
+    var groups = require('./groups.json');
+    groups.forEach(group => {
+        groupsMap[group.uuid] = group;
+    });
+};
+
 app.get('/', function (req, res) {
     res.render('greetUser', {title: 'Sign in'});
 });
@@ -29,9 +42,15 @@ app.post('/', function (req, res) {
 app.get('/myGroups', function (req, res) {
     name = req.cookies.name;
     groups = require('./groups.json');
+    postData = [];
+    groups.forEach(element => {
+        if(element.members.includes(name)){
+            postData.push(element);
+        }
+    });
     //Using the cookies.name create a new array of groups where the user is a member of and send that
     //as the post data in the render function below v
-    res.render('myGroups', {title: 'My Groups'});
+    res.render('myGroups', {title: 'My Groups', groupsData: postData});
 });
 
 app.get('/findGroups', function (req, res, next) {
