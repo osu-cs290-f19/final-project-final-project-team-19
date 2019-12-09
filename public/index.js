@@ -4,7 +4,6 @@ window.addEventListener('DOMContentLoaded', function (){
 
 
 function sendName(){
-    console.log('click');
     var nameField = document.getElementById('namefield');
     var postRequest = new XMLHttpRequest();
     var requestURL = '/';
@@ -41,3 +40,16 @@ function toggleEntry(element){
     element.querySelector(".arrowIcon").classList.toggle('rotate90');
     body.classList.toggle('showEntryBody');    
 };
+
+function toFindGroupsPage() {
+    document.location.href = "/findGroups";
+}
+
+function toCreateGroupsPage() {
+    document.location.href = "/createGroup";
+}
+
+function toHomePage() {
+    document.location.href = "/";
+}
+
