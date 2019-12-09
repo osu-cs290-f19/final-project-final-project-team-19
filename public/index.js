@@ -36,7 +36,7 @@ function sendName(){
 
 function joinGroup(groupUuid){
     var postRequest = new XMLHttpRequest();
-    var requestURL = '/createGroup/join';
+    var requestURL = '/findGroups/join';
     postRequest.open('POST', requestURL);
 
     var requestBody = JSON.stringify({

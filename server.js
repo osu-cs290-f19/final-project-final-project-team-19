@@ -39,6 +39,12 @@ app.post('/', function (req, res) {
     res.send();
 });
 
+app.post('/findGroups/join', function (req, res){
+    var user = req.cookies.name;
+    groupsMap[req.body.uuid].members.push(user);
+    res.status(200).send();
+});
+
 app.get('/myGroups', function (req, res) {
     name = req.cookies.name;
     refreshGroupMap();
