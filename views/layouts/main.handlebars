@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="styling.css">
+    <script src="index.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.4.2/handlebars.js"></script>
     <title>{{{title}}}</title>
 </head>
@@ -12,7 +13,7 @@
     <header>
         <div class='headerbar'>
             <h1><a href="/myGroups" class='title'>Groupr</a></h1>
-            <input id='change-user-button' type="button" value='Sign Out'/>
+            <input id='change-user-button' onclick="toHomePage()" type="button" value='Sign Out'/>
         </div>
     </header>
     {{{body}}}

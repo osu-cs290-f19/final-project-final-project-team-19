@@ -41,11 +41,6 @@ function toggleEntry(element){
     body.classList.toggle('showEntryBody');    
 };
 
-/* Interactions for the buttons */
-document.getElementById('find-group-button').onClick=toFindGroupsPage;
-document.getElementById('create-group-button').onClick=toCreateGroupsPage;
-document.getElementById('change-user-button').onClick=toHomePage;
-
 function toFindGroupsPage() {
     document.location.href = "/findGroups";
 }
