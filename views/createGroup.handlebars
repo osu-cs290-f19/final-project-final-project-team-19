@@ -1,16 +1,26 @@
+<script src="createGroup.js" charset="utf-8"></script>
 <div style='margin: 2em; border: 1px solid black; padding: 1em; display: flex; flex-direction: column;'>
-    <form >
-        <div class='formRow'>
-            <h2>Group Name</h2>
-            <input type="text" style='margin-left: 3em;' id='name'/>
+    <div class='formRow'>
+        <h2>Group Name</h2>
+        <input type="text" style='margin-left: 3em;' id='name' />
+    </div>
+
+    <div class="formRow">
+        <h2>Group Tag</h2>
+        <div id="tagRadioContainer">
+            <input type="radio" name="Tag" value="Studies" />Studies<br />
+            <input type="radio" name="Tag" value="Games" />Games<br />
+            <input type="radio" name="Tag" value="Sports" />Sports<br />
+            <input type="radio" name="Tag" value="Other" />Other<br />
         </div>
-        <div class='formRow'>
-            <h2>Description</h2>
-            <textarea rows='10' cols="30" style='margin-left: 3em;' id='description'></textarea>   
-        </div>
-        <div class='formRow'>
-            <h2>Submit</h2>
-            <input style='margin-left: 2em;' id='createGroup' type="button" value="Create"/>   
-        </div>           
-    </form>
+    </div>
+
+    <div class='formRow'>
+        <h2>Description</h2>
+        <textarea rows='10' cols="30" style='margin-left: 3em;' id='description'></textarea>
+    </div>
+    <div class='formRow'>
+        <h2>Submit</h2>
+        <input style='margin-left: 2em;' id='createGroup' type="button" value="Create" />
+    </div>
 </div>

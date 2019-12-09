@@ -96,3 +96,11 @@ h1{
     align-items: center;
     margin: 1em;
 }
+
+.formRow h2 {
+    min-width: 150px;
+}
+
+#tagRadioContainer{
+    margin-left: 2.5em;
+}
