@@ -41,8 +41,18 @@ app.post('/', function (req, res) {
 
 app.post('/findGroups/join', function (req, res){
     var user = req.cookies.name;
-    groupsMap[req.body.uuid].members.push(user);
-    res.status(200).send();
+    groupsMap[req.body.groupId].members.push(user);
+    fs.writeFile(
+        __dirname + '/groups.json',
+        JSON.stringify(groups, 2, 1),
+        function (err) {
+          if (!err) {
+            res.status(200).send("You joined " + groupsMap[req.body.groupId].name);
+          } else {
+            res.status(500).send("Failed to write data on server side.");
+          }
+        }
+      );
 });
 
 app.get('/myGroups', function (req, res) {
@@ -85,10 +95,6 @@ app.post('/createGroup/addGroup', function (req, res, next) {
         }
       );
   });
-
-app.post('/createGroup/addGroup', function (req, res, next) {
-    console.log(req.body);
-});
 
 app.listen(port, function () {
     console.log("== Server is listening on port", port);
