@@ -126,10 +126,11 @@ h1{
 }
 
 .CrGroupTextBox{
-    border-width: 1.5px;
+    border-width: 1px;
+    border-color: darkgrey;
     border-color: #404040;
-    border-radius: 15px;
-    padding: 2px 10px 2px 10px
+    border-radius: 8px;
+    padding: 5px 10px 5px 10px
 }
 
 #tagRadioContainer input {
