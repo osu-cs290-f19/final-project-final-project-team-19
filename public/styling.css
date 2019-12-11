@@ -38,9 +38,20 @@ h1{
   border-radius: 2em;
 }
 
-#change-user-button:hover{
-    cursor:pointer;
+#change-user-button:hover {
+    cursor: pointer;
+    background-color: #006060;
+}
 
+#greetUserButton {
+    width: 6em;
+    color: white;
+    background-color: #606060;
+    border-radius: 2em;
+}
+
+#greetUserButton:hover {
+    cursor: pointer;
     background-color: #006060;
 }
 
