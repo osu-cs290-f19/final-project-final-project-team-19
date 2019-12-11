@@ -72,7 +72,7 @@ h1{
   min-height: 2em;
   border-radius: 0.5em;
   padding: 1em;
-  box-shadow: 2px 2px 16px grey;
+  box-shadow: 5px 5px 5px grey;
 }
 
 input {
