@@ -5,7 +5,8 @@
   "uuid": "a6364db0-1a1a-11ea-a298-f9c11ce57369",
   "members": [
    "Lucas",
-   "Jack"
+   "Jack",
+   "bobbertl"
   ]
  },
  {
@@ -14,7 +15,9 @@
   "uuid": "c4721a00-1a1c-11ea-8471-99ba46308822",
   "members": [
    "Lucas",
-   "Vader"
+   "Vader",
+   "bobbertl",
+   "tom"
   ]
  },
  {
@@ -40,6 +43,40 @@
   "uuid": "4d93e2e0-1a1e-11ea-8471-99ba46308822",
   "members": [
    "Jack"
+  ]
+ },
+ {
+  "name": "thisgroup",
+  "description": "its a new group",
+  "uuid": "0cdc2c30-1c62-11ea-8391-a7e671f5531c",
+  "members": [
+   "tom"
+  ]
+ },
+ {
+  "name": "biggroup",
+  "description": "this is a big group",
+  "uuid": "7224f9a0-1c62-11ea-bd80-994a4a292241",
+  "members": []
+ },
+ {
+  "name": "testgroup1",
+  "description": "testing",
+  "uuid": "8e533820-1c63-11ea-9ce3-b90deb293da0",
+  "members": []
+ },
+ {
+  "name": "testgroup2",
+  "description": "testing2",
+  "uuid": "d8afee90-1c63-11ea-8e3a-21c8c8a058fa",
+  "members": []
+ },
+ {
+  "name": "testgroup3",
+  "description": "test3",
+  "uuid": "0d58c450-1c64-11ea-aea6-d90628b67984",
+  "members": [
+   "tom"
   ]
  }
 ]

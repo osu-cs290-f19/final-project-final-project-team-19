@@ -88,6 +88,8 @@ app.post('/createGroup/addGroup', function (req, res, next) {
     newGroup.members = [];
     groups = require('./groups.json');
     groups.push(newGroup);
+    groupsMap[newGroup.uuid] = newGroup;
+    refreshGroupMap();
     fs.writeFile(
         __dirname + '/groups.json',
         JSON.stringify(groups, 2, 1),
