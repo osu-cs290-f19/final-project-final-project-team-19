@@ -30,7 +30,9 @@
   "name": "Hockey",
   "description": "Welcome to our group for all things hockey. If you are looking for a hockey team to join you have come to the right spot. We meet Tuesdays and Thursdays from 4 to 6 at that one ice ring over by that one street. We would be glad to have you join so please come on down.",
   "uuid": "111a2a90-1a1e-11ea-8471-99ba46308822",
-  "members": []
+  "members": [
+   "Jack"
+  ]
  },
  {
   "name": "Soccer",
